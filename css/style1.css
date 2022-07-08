@@ -318,10 +318,14 @@ a {
 
 }
 
+.close-button:hover {
+    fill: var(--additional-color);
+}
+
 
 /*Инпуты*/
 .sign-up-form {
-    padding: 0 30px;
+    padding: 40px;
 }
 
 
@@ -336,11 +340,23 @@ a {
     font-size: 12px;
     letter-spacing: 0.01em;
     text-align: left;
+    color: var(--mini-calor);
+}
+
+.sign-up-form .form-field:hover {
+    fill: var(--additional-color);
+}
+
+.sign-up-form .form-field input:hover {
+    border-color: var(--additional-color);
+}
+
+.sign-up-form .form-field textarea:hover {
+    border-color: var(--additional-color)
 }
 
 .sign-up-form .form-field input {
     margin-top: 4px;
-    margin-bottom: 10px;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -348,17 +364,17 @@ a {
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
+    cursor: pointer;
 }
 
 .title-window {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
@@ -367,6 +383,8 @@ a {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
+    cursor: pointer;
+    margin-top: 4px;
 }
 
 .check-box {
@@ -375,8 +393,7 @@ a {
 }
 
 .model-window-btn {
-    width: 200px;
-    height: 50px;
+    padding: 10px 55px;
     background-color: var(--additional-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -389,6 +406,7 @@ a {
     border: none;
     margin-top: 30px;
     justify-content: center;
+    font-weight: bold;
 }
 
 .div-box {
@@ -408,6 +426,8 @@ a {
     position: absolute;
     transform: translate(12px, 32px);
 }
+
+
 
 /*Thumb*/
 .thumb {
@@ -983,4 +1003,6 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    padding: 15px 16px;
+
 }
