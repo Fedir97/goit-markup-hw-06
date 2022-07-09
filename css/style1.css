@@ -497,7 +497,6 @@ a {
     height: 70px;
     left: 0;
     width: 70px;
-
 }
 
 .close-icon {
@@ -510,7 +509,6 @@ a {
 .feature-list {
     display: flex;
     justify-content: center;
-
 }
 
 .feature-list .marks {
