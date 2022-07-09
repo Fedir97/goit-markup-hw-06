@@ -347,12 +347,31 @@ a {
     fill: var(--additional-color);
 }
 
-.sign-up-form .form-field input:hover {
-    border-color: var(--additional-color);
+.sign-up-form .form-field:focus {
+    fill: var(--additional-color);
 }
 
+
+.sign-up-form .form-field input:hover {
+    border-color: var(--additional-color);
+    outline: var(--additional-color);
+}
+
+.sign-up-form .form-field input:focus {
+    border-color: var(--additional-color);
+    outline: var(--additional-color);
+}
+
+
 .sign-up-form .form-field textarea:hover {
-    border-color: var(--additional-color)
+    border-color: var(--additional-color);
+    outline: var(--additional-color);
+}
+
+
+.sign-up-form .form-field textarea:focus {
+    border-color: var(--additional-color);
+    outline: var(--additional-color);
 }
 
 .sign-up-form .form-field input {
@@ -390,6 +409,10 @@ a {
 .check-box {
     width: 16px;
     height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    align-items: center;
 }
 
 .model-window-btn {
@@ -407,6 +430,10 @@ a {
     margin-top: 30px;
     justify-content: center;
     font-weight: bold;
+}
+
+.model-window-btn:hover {
+    background-color: #188CE8;
 }
 
 .div-box {
@@ -427,7 +454,28 @@ a {
     transform: translate(12px, 32px);
 }
 
+.text-box {
+    display: flex;
+    align-items: center;
+}
 
+.check-icon {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 7px;
+
+}
+
+.check-box:checked+.check-icon {
+    background-image: url(../photos/svg/icon\ check.svg);
+    background-position: center;
+    background-color: var(--additional-color);
+    background-origin: border-box;
+    border-color: var(--additional-color);
+}
 
 /*Thumb*/
 .thumb {
