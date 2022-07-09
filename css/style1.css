@@ -443,6 +443,7 @@ a {
 .text-color {
     text-decoration: underline;
     color: var(--additional-color);
+    margin-left: 4px;
 }
 
 .text-size {
@@ -460,12 +461,13 @@ a {
 }
 
 .check-icon {
-    width: 16px;
-    height: 15px;
+    width: 15px;
+    height: 16px;
     border: 2px solid #212121;
     display: inline-block;
     border-radius: 2px;
     margin-right: 7px;
+
 
 }
 
@@ -475,6 +477,7 @@ a {
     background-color: var(--additional-color);
     background-origin: border-box;
     border-color: var(--additional-color);
+    background-repeat: no-repeat;
 }
 
 /*Thumb*/
